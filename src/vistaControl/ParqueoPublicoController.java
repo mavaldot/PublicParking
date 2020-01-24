@@ -51,7 +51,8 @@ public class ParqueoPublicoController {
     	    	  String horaInicio = parqueoPublico.darHoraInicio();
     	    	  horaInicioTextField.setText(horaInicio);
     	    	  horaFinalTextField.setText("");
-    	    	  valorAPagarTextField.setText("");
+				valorAPagarTextField.setText(CURRENCY.format(valorAPagar));
+
     	      }
     	    });    	
     }
